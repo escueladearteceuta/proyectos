@@ -246,6 +246,17 @@ header p .mostaza{
     font-size: 4rem;
   }
 
+  .menu-botones{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-botones a{
+    margin: 20px 0;
+  }
+
 
 
 }
