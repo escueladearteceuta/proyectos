@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap');
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mohave', sans-serif;
+}
 
 .contenedor{
 	height: 100vh;
@@ -6,12 +13,17 @@
 
 	display:  flex;
 	flex-direction: column;
+	row-gap: 50px;
 
 	justify-content: center;
 	align-items: center;
+
+	background-color: #f1f1f1f1;
 }
 
 .contenedor-img-portada{
+	width: 60%;
+	object-fit: cover;
 	background: rgba( 255, 255, 255, 0.25 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	backdrop-filter: blur( 4px );
@@ -21,12 +33,15 @@
 }
 
 .contenedor-btn-acceso{
-	background: rgba( 255, 255, 255, 0.25 );
+	padding: 10px 20px;
+	background: rgba( 0, 144, 168, 0.5 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px );
+	backdrop-filter: blur( 9.5px );
+	-webkit-backdrop-filter: blur( 9.5px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	text-decoration: none;
 }
 
 
