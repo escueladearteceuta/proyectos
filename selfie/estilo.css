@@ -26,21 +26,18 @@
 	object-fit: cover;
 	background: rgba( 255, 255, 255, 0.25 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	animation: animate-shadow 5s ease-in ;
 }
 
 .contenedor-btn-acceso{
 	padding: 10px 20px;
 	background: rgba( 0, 144, 168, 0.5 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 9.5px );
-	-webkit-backdrop-filter: blur( 9.5px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
-
 	text-decoration: none;
 }
 
@@ -49,5 +46,23 @@
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.57 );
 }
 
+
+@keyframes animate-shadow{
+	0%{
+		box-shadow: 0 16px 32px 0 rgba( 31, 38, 135, 0.37 );
+	}
+	25%{
+		box-shadow: 16px 5px 32px 0 rgba( 31, 38, 135, 0.37 );
+	}
+	50%{
+		box-shadow: 16px -16px 32px 0 rgba( 31, 38, 135, 0.37 );
+	}
+	75%{
+		box-shadow: -16px 5px 32px 0 rgba( 31, 38, 135, 0.37 );
+	}
+	100%{
+		box-shadow: 0 16px 32px 0 rgba( 31, 38, 135, 0.37 );
+	}
+}
 
 
