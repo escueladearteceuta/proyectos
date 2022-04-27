@@ -13,7 +13,9 @@
 	justify-content: center;
 	align-items: center;
 
-	padding: 0 80px;
+	/*padding: 0 80px;*/
+
+	padding: 0 20%;
 }
 
 .contenedor a{
@@ -22,8 +24,10 @@
 }
 
 .img-escuela{
-   width: 260px;
-   height: 106px;
+   /*width: 260px;
+   height: 106px;*/
+   width: 160px;
+   height: 66px;
    background-image: url("logo-EAC-inicio.png");
    background-size: cover;
 }
@@ -33,55 +37,120 @@
 	background-image: url("logo-EAC-inicio-color.png");
 }
 
+.fondo{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.frame-sup{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	max-width: 100%;
+   max-height: 100%;
+	
+}
+
+.frame-inf{
+	position: fixed;
+	left: 0px;
+	bottom: -4px;
+	
+}
+
+.frame-sup img{
+	object-fit: cover;
+	max-width: 100%;
+  	max-height: 100%;
+}
+
+.frame-inf img{
+	object-fit: cover;
+	max-width: 100%;
+  	max-height: 100%;
+}
+
+
+
 h1{
 	text-align: center;
-	font-size: 1em;
+	font-size: 0.9 em;
 	font-family: 'Rubik', sans-serif;
 }
 
 .enlace{
+	display: inline-block;
 	text-decoration: none;
-	color:black;
+	color:white;
+
+	padding: 15px 20px;
+
+	border-radius: 12px;
+
+	font-weight: bold;
+
+	background-color: #0079FE;
 }
 
 @media (min-width: 300px){
 	h1{
-		font-size: 2em;
+		font-size: 1.4em;
 	}
 }
 
 @media (min-width: 500px){
 	h1{
-		font-size: 2.5em;
+		font-size: 1.8em;
 	}
 	.contenedor{
 		width:70%;
+		padding: 0 15%;
 	}	
+	.img-escuela{
+   	width: 205px;
+   	height: 84px;
+   }
 }
 
 @media (min-width: 700px){
 	h1{
-		font-size: 3em;
+		font-size: 2.2em;
 	}
 	.contenedor{
 		width:50%;
+		padding: 0 20%;
 	}
+
 }
 
 @media (min-width: 800px){
 	h1{
-		font-size: 3.5em;
+		font-size: 2.4em;
 	}
 	.contenedor{
 		width:50%;
+		padding: 0 15%;
 	}
 }
 
 @media (min-width: 1024px){
 	h1{
-		font-size: 4em;
+		font-size: 2.5em;
 	}
 	.contenedor{
 		width:50%;
+		padding: 0 10%;
 	}
+	.img-escuela{
+   	width: 260px;
+   	height: 106px;
+   }
 }
+
+/*@media (min-width: 1050px){
+	.contenedor{
+		width:50%;
+		padding: 0 10%;
+	}
+}*/

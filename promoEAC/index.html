@@ -30,17 +30,46 @@
 	<title>PromoEAC Web Chat Bot</title>
 </head>
 <body>
+	<!-- <img class="superior" src="img/Esquina-Superior.svg" alt="">
+	<img class="inferior" src="img/Esquina-Inferior.svg" alt=""> -->
+	
+	<div class="fondo">
+		
+		<!-- <img class="frame-sup" src="img/Esquina-Superior.svg" alt=""> -->
 
-	<div class="animate__animated  animate__backInLeft contenedor">
-	  <h1>Conoce nuestra<br> oferta <br>formativa a<br> través de este<br> bot inteligente</h1>
+		<picture class="frame-sup">
+		  <source media="(max-width: 600px)" srcset="img/Esquina_Sup-Movil.svg">
+		  <source media="(max-width: 700px)" srcset="img/Esquina_700_Sup.svg">
+		  <source media="(max-width: 1024px)" srcset="img/Esquina-Superior.svg">
+		  <img src="img/Esquina-Superior.svg" alt="Esquinas decorativas">
+		</picture>
 
-	  <a href="http://eaceuta.educalab.es/"" target="_blank">
-	  	<div class="img-escuela"></div>
-	  	<!-- <img src="logo-EAC-inicio.png" alt=""> -->
-	  </a>
-	  <a class="enlace" href="http://eaceuta.educalab.es/"" target="_blank">www.eaceuta.com</a>
+		<!-- <img class="frame-inf" src="img/Esquina-Inferior.svg" alt=""> -->
+
+		<picture class="frame-inf">
+		  <source media="(max-width: 600px)" srcset="img/Esquina_Inf-Movil.svg">
+		  <source media="(max-width: 700px)" srcset="img/Esquina_700_Inf.svg">
+		  <source media="(max-width: 1024px)" srcset="img/Esquina-Inferior.svg">
+		  <img src="img/Esquina-Inferior.svg" alt="Esquinas decorativas">
+		</picture>
+
+		<div class="animate__animated  animate__backInLeft contenedor">
+
+		  <h1>Conoce nuestra oferta <br>formativa a través de <br>este bot inteligente</h1>
+
+		  <a href="http://eaceuta.educalab.es/"" target="_blank">
+		  	<div class="img-escuela"></div>
+		  	<!-- <img src="logo-EAC-inicio.png" alt=""> -->
+		  </a>
+		  <a class="enlace" target="_blank">Me interesa</a>
+		</div>
+
 	</div>
 	
-	<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(176547)</script>  
+	
+	<script src="https://account.snatchbot.me/script.js"></script>
+
+	<script>window.sntchChat.Init(176547)</script> 
+	<script src="js/activa.js"></script> 
 </body>
 </html>
