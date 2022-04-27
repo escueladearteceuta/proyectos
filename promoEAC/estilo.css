@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+body{
+	overflow: hidden;
+}
+
 .contenedor{
 	height: 100vh;
 
@@ -91,6 +95,8 @@ h1{
 	font-weight: bold;
 
 	background-color: #0079FE;
+
+	cursor: pointer;
 }
 
 @media (min-width: 300px){
@@ -111,6 +117,7 @@ h1{
    	width: 205px;
    	height: 84px;
    }
+
 }
 
 @media (min-width: 700px){
