@@ -39,10 +39,22 @@ body{
 
 .galeria{
 	display: grid;
-	grid-template-columns: 1fr 1fr ;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 
 	position: relative;
+}
+
+@media screen and (max-width: 700px){
+	.galeria{
+		grid-template-columns: 1fr ;
+	}
+}
+
+@media screen and (max-width: 1050px){
+	.galeria{
+		grid-template-columns: 1fr 1fr ;
+	}
 }
 
 .modal{
