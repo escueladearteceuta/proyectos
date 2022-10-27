@@ -1,0 +1,130 @@
+@font-face{
+	font-family: "Halloween";
+	src: url("fonts/Halloween Morning.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+  
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.cementerio{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 100px;
+
+	background-color: darkslategrey;
+
+}
+
+.cementerio h1{
+	font-family: Halloween;
+
+	letter-spacing: 0.4em;
+
+	color:#f4f4f4;
+
+	font-size: calc(30px + 2vw);
+}
+
+.cementerio .tira{
+
+	display: flex;
+
+	gap: 10px;
+
+
+}
+
+.cementerio .tiras-lapidas{
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	gap: 10px;
+}
+
+.cementerio .tira .lapida{
+	width: 100px;
+	height: 100px;
+
+	/* background-color: grey; */
+
+	border-radius: 12px 12px 0 0 ;
+
+	position: relative;
+
+	z-index: 1;
+
+}
+
+.cementerio .tira .lapida a{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cementerio .tira .lapida h1{
+
+	font-family: 'Lato', sans-serif;
+
+	
+
+
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	font-size: 0em;
+	text-align: center;
+	width: 100%;
+
+	color:#f4f4f4;
+
+	transition: all 0.5s ease;
+	
+}
+
+
+.cementerio .tira .lapida:hover > h1{
+	transform: translateY(-40px);
+	opacity: 1;
+	font-size: calc(6px + 1vw);
+}
+
+.cementerio .tira .lapida:hover > .down{
+	transform: translateY(115px);
+	opacity: 1;
+	font-size: calc(6px + 1vw);
+}
+
+.cementerio .tira .lapida a img{
+	width: 100%;
+	height: 100%;
+}
+
+.eac{
+	width: 60% !important;
+	height: 60% !important;
+
+	/* transform: rotate(45deg); */
+
+	filter:brightness(80%);
+}
+
+

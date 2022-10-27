@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+
+}
+
+
+body{
+	background-color:#000000;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.btn-cerrar{
+   position: absolute;
+
+   top: 20px;
+   right: 20px;
+
+   font-size: 3em;
+
+   text-shadow: 0px 0px 42px #f4f4f4;
+
+   color:#f4f4f4;
+
+   transition: all 0.3s ease;
+}
+
+.btn-cerrar:hover{
+    font-size:3.5em;
+}
+
+
+.cuerpofantasma{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fantasma{
+	 width: 686px;
+    height: 622px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    top: 100px;
+   
+
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+   0%{
+      opacity: 1;
+      transform:translateY(0px);
+
+   }
+   50%{
+      transform: translateY(-50px);
+
+   }
+   100%{
+      opacity: 0;
+      transform: translateY(0px);
+   }
+}
+
+
+
+.cabeza{
+	width: 217px;
+    height: 196px;
+    background-color: #FFFFFF;
+    border-radius: 86%;
+    position: absolute;
+    padding: 28px;
+    margin-bottom: 200px;
+ }
+
+ .halo{
+    width: 217px;
+   height: 100%;
+   background: radial-gradient(#7909fa 25%,#7909fa00);
+   border-radius: 50%;
+   position: absolute;
+   mix-blend-mode: screen;
+
+   z-index: 6;
+
+
+   /*animation-name: halo;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;*/
+
+   }
+
+   @keyframes halo {
+      0%{
+         transform:translateY(0px);
+         opacity: 1;
+      }
+      50%{
+         transform: translateY(-50px);
+      }
+      100%{
+         transform: translateY(0px);
+         opacity: 0;
+      }
+   }
+
+.cuerpo{
+	width: 253px;
+    height: 190px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    margin-bottom: 200px;
+    border-radius: 21px;
+
+
+
+}
+
+.brazos{
+	position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    top: 237px;
+   
+}
+
+.brazo1{
+	background-color: #ffffff;
+    width: 204px;
+    height: 32px;
+    border-radius: 50%;
+}
+.brazo2{
+	background-color: #ffffff;
+    width: 155px;
+    height: 32px;
+    border-radius: 50%;
+}
+.patitas{
+	width: 250px;
+    height:50px;
+    display: flex;
+   	flex-direction: row;
+    position: absolute; 
+    top: 62.5%;  
+}
+
+
+.patitas > div {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	
+}
+
+
+
+.ojos1{
+   display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 47px;
+    margin-bottom: 200px;
+    margin-right: 14px;
+    position: absolute;
+}
+
+
+
+
+.ojosnegros{
+	height: 45px;
+    width: 44px;
+    background-color: black;
+    border-radius: 100%
+}
+
+
+
+
+
+.ojos2{
+	display: flex;
+    justify-content: space-around;
+    width: 197px;
+    height: 23px;
+    margin-bottom: 200px;
+    margin-right: 15px;
+    position: absolute;
+}
+.ojosblancos{
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+.boca{
+   width: 96px;
+   height: 37px;
+   background: black;
+   margin-bottom: 76px;
+   margin-right: 7px;
+   border-radius: 60%;
+   position: relative;
+   
+
+   animation-name: holi;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes holi {
+   0%{
+      transform:translateY(5px);
+      height: 70px;
+     
+
+   }
+   50%{
+      transform: translateY(0px);
+     
+      
+
+   }
+   100%{
+      transform: translateY(-5px);
+      height: 37px;
+   }
+}
+
+
+   
+
+
+.boca:hover{
+   height: 70px;
+
+
+}
+.mofletes{
+	display: flex;
+    margin-bottom: 133px;
+    margin-left: 93px;
+    position: absolute;
+    justify-content: center
+}
+.moflete1{
+	width: 40px;
+    height: 16px;
+    margin-right: 100px;
+    border-radius: 50%;
+    background-color: #E43125;
+}
+
+
+.moflete2{
+	width: 40px;
+    height: 16px;
+    margin-right: 100px;
+    border-radius: 50%;
+    background-color: #E43125;
+}
+
+.cuerposombra{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.sombra{
+	background-color: #817B7B;
+    width: 240px;
+    height: 33px;
+    
+    /* border-radius: 17px 17px; */
+    clip-path: ellipse(50% 49% at 49% 49%);
+    
+
+
+   animation-name: sombra;
+   animation-duration: 3s;
+   animation-timing-function: ease ease-in-out;
+   animation-iteration-count: infinite;
+    }
+
+
+   @keyframes sombra{
+   0%{
+      transform:translateY(0px);
+      width: 240px;
+
+   }
+   50%{
+      transform: translateY(0px);
+     
+      
+
+   }
+   100%{
+      transform: translateY(3px);
+      width: 150px;
+     
+   }
+   }
+
+
+
+.cuerposombra
+{animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+   0%{
+      opacity: 1;
+      transform:translateY(0px);
+
+   }
+   50%{
+      transform: translateY(-50px);
+
+   }
+   100%{
+      opacity: 0;
+      transform: translateY(0px);
+   }
+}
+
+
+   
+
+
+
+
+
+
+

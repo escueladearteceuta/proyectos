@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #3d3144;
+    overflow: hidden;
+}
+
+.btn-cerrar{
+    position: absolute;
+ 
+    top: 20px;
+    right: 20px;
+ 
+    font-size: 3em;
+ 
+    text-shadow: 0px 0px 42px #f4f4f4;
+ 
+    color:#f4f4f4;
+ 
+    transition: all 0.3s ease;
+ }
+ 
+ .btn-cerrar:hover{
+     font-size:3.5em;
+ }
+ 
+
+@keyframes fantasma{
+    0%, 100% {
+        top: 100px;
+    }
+    50% {
+        top: 200px;
+    }
+}
+
+@keyframes aura{
+    0%, 100% {
+        top: 300px;
+        opacity: 100%
+    }
+    50% {
+        top: 400px;
+        opacity: 0%;
+    }
+}
+
+.aura {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background-image: radial-gradient(#9EEEB0, rgba(119, 119, 119, 0));
+    animation-name: aura;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.fantasma {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: fantasma;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.cabeza {
+    position: absolute;
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    background-color: #f7f3f0;
+}
+
+.cuerpo {
+    position: absolute;
+    width: 348px;
+    height: 348px;
+    background-color: #f7f3f0;
+    top: 175px;
+}
+
+.patitas {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    top: 475px;
+}
+
+.patitas > div{
+    width: 87.5px;
+    height: 87.5px;
+    background-color: #f7f3f0;
+    border-radius: 100%;
+}
+
+.ojos {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 100px;
+}
+
+.ojos > div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #252525;
+}
+
+.pupilas {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 125px;
+}
+
+.pupilas > div {
+    width: 20px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #f7f3f0;
+}
+
+.colorete {
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 175px;
+}
+
+.colorete > div {
+    width: 40px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #de5239c2;
+}
+
+.boca {
+    width: 125px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #252525;
+    position: absolute;
+    top: 200px;
+}
+
+.dientes {
+    position: absolute;
+    width: 35px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 190px;
+}
+
+.dientes> div {
+    width: 15px;
+    height: 30px;
+    border-radius: 40%;
+    background-color: #f7f3f0;
+} 
+
+.brazos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 200px;
+}
+
+.brazoizquierdo {
+    width: 50px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #f7f3f0;
+    transform: rotate(-40deg);
+}
+
+.brazoderecho {
+    width: 50px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #f7f3f0;
+    transform: rotate(40deg);
+}
+
+@keyframes sombra{
+    0%, 100% {
+        width: 210px;
+        height: 30px;
+    }
+    50% {
+        width: 350px;
+        height: 50px;
+    }
+}
+
+@keyframes ojitos {
+    0%, 100% {
+        transform: translate(5%, 0);
+    }
+    50% {
+        transform: translate(-5%, 0);
+    }
+}
+
+.sombra {
+    width: 350px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #271c1c;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation-name: sombra;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.pupilas:hover {
+    animation-name: ojitos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
