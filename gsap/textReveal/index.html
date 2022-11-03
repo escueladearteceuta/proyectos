@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="estilo.css">
+
+	<title>Text Reveal GSAP Animation</title>
+</head>
+<body>
+	<header>
+		<h1 id="titulo">Escuela de Arte</h1>
+	</header>
+
+
+	<script src="https://unpkg.com/split-type"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script type="text/javascript">
+
+		const myText = new SplitType('#titulo')
+
+		gsap.to('.char', {
+
+			y:0,
+			stagger:0.05,
+			delay:0.2,
+			duration:.1
+			
+			}
+		)
+	</script>
+</body>
+</html>
