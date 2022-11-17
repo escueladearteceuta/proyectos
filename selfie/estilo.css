@@ -22,13 +22,13 @@
 }
 
 .contenedor-img-portada{
-	width: 60%;
+	width: 90%;
 	object-fit: cover;
 	background: rgba( 255, 255, 255, 0.25 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	border-radius: 10px;
 
-	animation: animate-shadow 5s ease-in ;
+	
 }
 
 .contenedor-btn-acceso{
@@ -39,6 +39,14 @@
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	text-decoration: none;
 	color: #f1f1f1f1;
+
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    animation: animate-shadow 5s ease-in infinite;
+
+
 }
 
 

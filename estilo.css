@@ -7,30 +7,81 @@
 }
 
 .contenedor{
-    width:100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header{
-    flex:1 1 30%;
+/*    max-width:1000px;*/
+    min-height:100vh;
 
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+}
+
+header{
+    flex:1 1 20%;
+
+/*    padding: 0 100px;*/
+
+    
+    display: flex;
+    justify-content: center;
     align-items: center;
+
+    min-height: 100vh;
+
+    min-width: 210px;
+}
+
+header .content-fixed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
 }
 
 header h1{
     font-family: 'Anton', sans-serif;
-    font-size: clamp(1rem, 9vw, 12rem);
+/*    font-size: clamp(1rem, 7vw, 10rem);*/
+
+    font-size:6rem;
 
     text-transform: uppercase;
+
+    width:50px;
+    word-wrap: break-word;
+    text-align:center;
+    line-height:90px;
+
+    
+
+}
+
+header .content-fixed h2{
+
+    font-family: 'Anton', sans-serif;
+/*    font-size: clamp(1rem, 7vw, 10rem);*/
+
+    font-size:6rem;
+
+    text-transform: uppercase;
+
+    text-align:center;
+    line-height:90px;
+
+    color: #fff;
+
+    padding:5px;
+
+    background-color: #F2C12E;
+
+    display: flex;
+    align-self: flex-end;
 }
 
 
-section{
-    flex:1 1 70%;
+section {
+
+    flex:1 1 80%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,21 +89,35 @@ section{
     flex-wrap: wrap;
 
     gap:20px;
+
+/*    max-width:1000px;*/
+    min-height: 100vh;
+
+    padding: 100px 0px;
+
+    background-color: #131A40;
     
 }
 
-section .fila{
+.fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+
+    flex-wrap: wrap;
+
+    max-width:60%;
+}
+
+article{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:20px;
-
-    flex-wrap: wrap;
-}
-
-article{
-    width:300px;
+    
+    width:200px;
+    height:150px;
     /* height:300px; */
 
     border-radius: 12px;
@@ -60,9 +125,6 @@ article{
     transition: width 0.5s ease;
 }
 
-article:hover{
-    width:220px;
-}
 
 article a{
     text-decoration: none;

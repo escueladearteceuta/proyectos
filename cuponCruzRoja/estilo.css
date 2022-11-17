@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 :root{
 	--url-image: url("img/ENERO.jpg");
 }
@@ -12,17 +15,26 @@ body{
 	height: 100vh;
 }
 
+h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 7rem;
+	text-transform: uppercase;
+}
+
+.galeria .cupon h1{
+	font-size: 2rem;
+}
+
 
 .contenido{
-	/*width: 100vw;*/
-	height: 100%;
+	height: 80%;
 
 	display: grid;
 	grid-template-columns: 50px 1fr 50px ;
-	
-	/*grid-gap: 20px;*/
 
 	align-content: center;
+
+	padding: 50px 0px;
 }
 
 @media screen and (max-width: 700px){
@@ -60,8 +72,9 @@ body{
 .modal{
 	display: none;
 	position: absolute;
+	bottom:0;
 	width: 100vw;
-	height: 100vh;
+	height: 80vh;
 	background-color: rgba(0,0,0,0.7);
 	z-index: 1;
 }
