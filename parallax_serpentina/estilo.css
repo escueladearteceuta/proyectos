@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&family=Rubik:wght@600&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.contenedor{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+h1{
+	font-family: 'Rubik', sans-serif;
+	font-size: clamp(1rem, 5vw, 3.25rem);
+}
+
+/*=================================================================*/
+/*                      PARALLAX SHAPES                              
+/*=================================================================*/
+.parallax {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+  }
+  .parallax .layer {
+	position: absolute;
+  }
+  .parallax .p1 {
+	left: 10%;
+	top: 10%;
+  }
+  .parallax .p2 {
+	left: 25%;
+	top: 30%;
+  }
+  .parallax .p3 {
+	left: 15%;
+	bottom: 30%;
+  }
+  .parallax .p4 {
+	left: 10%;
+	bottom: 10%;
+  }
+  .parallax .p5 {
+	left: 45%;
+	top: 10%;
+  }
+  .parallax .p6 {
+	left: 40%;
+	bottom: 10%;
+  }
+  .parallax .p7 {
+	top: 20%;
+	right: 30%;
+  }
+  .parallax .p8 {
+	right: 30%;
+	bottom: 20%;
+  }
+  .parallax .p9 {
+	right: 10%;
+	top: 10%;
+  }
+  .parallax .p10 {
+	top: 45%;
+	right: 20%;
+  }
+  .parallax .p11 {
+	bottom: 10%;
+	right: 10%;
+  }
+
+.parallax{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.parallax svg{
+	position:  absolute;
+	width: 26px;
+	height: 26px;
+}
+
+
+.parallax .f1{
+	left: 10%;
+    top: 10%;
+}
+
+.parallax .f2{
+	left: 25%;
+    top: 30%;
+}
+
+.parallax .f3{
+    left: 15%;
+    bottom: 30%;
+}
+
+.parallax .f4{
+    top: 20%;
+    right: 30%;
+}
+
+.parallax .f5{
+	top: 45%;
+    right: 20%;
+}
+
+.parallax .f5 path{
+   stroke: #20C997;
+}
+
+.parallax .f6{
+	bottom: 10%;
+    right: 10%;
+}
+
+.parallax .f6 line{
+   stroke: #FFC107;
+}
+
+.parallax .f7{
+	bottom: 10%;
+    left: 50%;
+}
+
+.parallax .f7 path{
+   stroke: #6F42C1;
+}
+
+.parallax .f8{
+	left: 50%;
+    top: 10%;
+}
+
+.parallax .f8 path{
+   stroke: #6F42C1;
+}
+
+
+
